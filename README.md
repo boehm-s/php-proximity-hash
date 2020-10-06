@@ -1,4 +1,4 @@
-# php-proximity-hash
+# php-proximity-hash ![Build Status](https://travis-ci.com/boehm-s/php-proximity-hash.svg?branch=main)
 
 A port of [https://github.com/ashwin711/proximityhash](proximityhash) for PHP.
 
