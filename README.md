@@ -4,11 +4,11 @@ A port of [https://github.com/ashwin711/proximityhash](proximityhash) for PHP.
 
 Geohash is a geocoding system invented by Gustavo Niemeyer and placed into the public domain. It is a hierarchical spatial data structure which subdivides space into buckets of grid shape, which is one of the many applications of what is known as a Z-order curve, and generally space-filling curves.
 
-To visualize geohashes, you can [http://geohash.gofreerange.com/](go here).
+To visualize geohashes, you can [http://geohash.gofreerange.com](go here).
 
 ProximityHash generates a set of geohashes that cover a circular area, given the center coordinates and the radius.
 
-It looks like that : 
+Below is an illustration of what it looks like on a map : 
 
 ![ProximityHash illustration](./img/proximityhash-illustration.png)
 
