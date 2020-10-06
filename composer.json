@@ -1,0 +1,20 @@
+{
+    "name": "boehm_s/php-proximity-hash",
+    "type": "library",
+    "description": "A PHP port of the proximityhash algorithm by Ashwin Nair",
+    "require": {
+        "saikiran/geohash": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Steven BOEHM",
+            "email": "steven.boehm.dev@gmail.com"
+        }
+    ],
+    "readme": "./README.md",
+    "autoload": {
+        "classmap": [
+            "./src/proximity-hash.php"
+        ]
+    }
+}
