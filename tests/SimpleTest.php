@@ -14,6 +14,10 @@ final class SimpleTest extends TestCase
 
         $res = ProximityHash::generate($latitude, $longitude, $radius, $precision);
 
+        var_dump($res);
+
         $this->assertEquals(count($res), 13);
+        $this->assertEquals(in_array("u09tup", $res), true);
+
     }
 }
