@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit bootstrap="./vendor/autoload.php" stopOnFailure="true">
+
+  <testsuites>
+    <testsuite name="php-proximity-hash test suite">
+      <file> ./tests/SimpleTest.php </file>
+    </testsuite>
+  </testsuites>
+
+</phpunit>

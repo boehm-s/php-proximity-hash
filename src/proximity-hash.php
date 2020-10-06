@@ -1,8 +1,9 @@
 <?php
 
-use Sk\Geohash\Geohash;
 
 namespace boehm_s;
+
+use Sk\Geohash\Geohash;
 
 class ProximityHash {
     private static function in_circle_check($latitude, $longitude, $centre_lat, $centre_lon, $radius) {
@@ -37,7 +38,7 @@ class ProximityHash {
         return [$final_lat, $final_lon];
     }
 
-    public static function get($latitude, $longitude, $radius, $precision) {
+    public static function generate($latitude, $longitude, $radius, $precision) {
         $geohash = new Geohash();
         $x = 0.0;
         $y = 0.0;
@@ -79,6 +80,6 @@ class ProximityHash {
             $geohashes []= $geohash->encode($point[0], $point[1], $precision);
         }
 
-        return $geohashes;
+        return array_values(array_unique($geohashes));
     }
 }
